@@ -50,7 +50,10 @@ function berekenGemiddelde(studentenLijst) {
     });
 
     gemiddelde = som / studenten.length;
-    console.log(element.naam + "'s gemiddelde: " + gemiddelde);
+
+    if (gemiddelde >= 5.5) {
+      console.log(element.naam + "'s gemiddelde: " + gemiddelde);
+    };
   });
 }
 
